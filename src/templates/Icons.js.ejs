@@ -1,0 +1,14 @@
+import React from "react"
+<% if(props.framework === "React Native") { %> import Svg, { G, Path } from "react-native-svg" <% } %>
+
+export const Icons = {<% props.converted.forEach(svg => { %>
+  "<%- svg.name %>": (props) => (
+    <%- svg.svg %>
+  ),<% }) %>
+}
+
+export function Icon(props){
+  const { icon, width, height } = props
+  const SvgIcon = Icons[icon]
+  return <SvgIcon width={width || 512} height={height || 512} />
+} 

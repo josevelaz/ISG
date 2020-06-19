@@ -1,0 +1,22 @@
+import React<% if(props.framework !== "React Native") { %>, { SVGProps}<% } %> from "react"
+<% if(props.framework === "React Native") { %>import Svg, { G, Path, SvgProps } from "react-native-svg" <% } %>
+
+export const Icons = {<% props.converted.forEach(svg => { %>
+  "<%- svg.name %>": (props: <% if(props.framework === "React Native") { %> SvgProps<% } else { %> SVGProps <% } %>) => (
+    <%- svg.svg %>
+  ),<% }) %>
+}
+
+export type IconsTypes = keyof typeof Icons
+
+export interface IconProps {
+  icon: string
+  width?: number
+  height?: number
+}
+
+export function Icon(props: IconProps){
+  const { icon, width, height } = props
+  const SvgIcon = Icons[icon]
+  return <SvgIcon width={width || <%- props.dimensions.width %>} height={height || <%- props.dimensions.width %>} />
+} 
