@@ -1,6 +1,6 @@
-# isg CLI
+# svg-component-library-creator CLI
 
-A CLI for isg.
+A CLI for svg-component-library-creator.
 
 ## Customizing your CLI
 

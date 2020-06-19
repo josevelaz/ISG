@@ -91,9 +91,9 @@ module.exports = {
       )
       print.info(
         colors.green.bold(
-          `isg  ${colors.yellow('[c | create]')} ${colors.italic.cyan(
-            '[FOLDER_NAME]'
-          )}`
+          `svg-component-library-creator  ${colors.yellow(
+            '[c | create]'
+          )} ${colors.italic.cyan('[FOLDER_NAME]')}`
         )
       )
     }

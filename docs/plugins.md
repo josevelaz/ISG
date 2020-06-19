@@ -1,10 +1,10 @@
-# Plugin guide for isg
+# Plugin guide for svg-component-library-creator
 
-Plugins allow you to add features to isg, such as commands and
+Plugins allow you to add features to svg-component-library-creator, such as commands and
 extensions to the `toolbox` object that provides the majority of the functionality
-used by isg.
+used by svg-component-library-creator.
 
-Creating a isg plugin is easy. Just create a repo with two folders:
+Creating a svg-component-library-creator plugin is easy. Just create a repo with two folders:
 
 ```
 commands/
@@ -44,6 +44,6 @@ This is then accessible in your plugin's commands as `toolbox.bar`.
 
 # Loading a plugin
 
-To load a particular plugin (which has to start with `isg-*`),
-install it to your project using `npm install --save-dev isg-PLUGINNAME`,
-and isg will pick it up automatically.
+To load a particular plugin (which has to start with `svg-component-library-creator-*`),
+install it to your project using `npm install --save-dev svg-component-library-creator-PLUGINNAME`,
+and svg-component-library-creator will pick it up automatically.

@@ -1,7 +1,7 @@
 import { GluegunCommand } from 'gluegun'
 
 const command: GluegunCommand = {
-  name: 'isg',
+  name: 'svg-component-library-creator',
   run: async toolbox => {
     const { print } = toolbox
 

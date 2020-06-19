@@ -6,10 +6,10 @@ const { build } = require('gluegun')
 async function run(argv) {
   // create a CLI runtime
   const cli = build()
-    .brand('isg')
+    .brand('svg-component-library-creator')
     .src(__dirname)
     .plugins('./node_modules', {
-      matching: 'isg-*',
+      matching: 'svg-component-library-creator-*',
       hidden: true
     })
     .help() // provides default for help, h, --help, -h
