@@ -1,6 +1,6 @@
 {
   "name": "svg-component-library-creator",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "svg-component-library-creator CLI",
   "private": false,
   "types": "build/types/types.d.ts",
