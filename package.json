@@ -5,7 +5,8 @@
   "private": false,
   "types": "build/types/types.d.ts",
   "bin": {
-    "svg-component-library-creator": "bin/svg-component-library-creator"
+    "svg-component-library-creator": "bin/svg-component-library-creator",
+    "svg-clc": "bin/svg-component-library-creator"
   },
   "scripts": {
     "format": "prettier --write **/*.{js,ts,tsx,json}",
